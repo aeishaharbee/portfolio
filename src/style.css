@@ -1,0 +1,406 @@
+/* FONTS */
+.plaster {
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.tenor-sans-reg {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tenor-sans-bold {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+/* SPLASH SCREEN */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background-size: cover; /* Adjusts the background image to cover the entire screen */
+  background-position: center; /* Centers the background image */
+  transition: background-image 0.5s ease;
+}
+
+#splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* CHANGE THIS WHEN ENABLE SPLASH SCREEN, opacity: 0 */
+header {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.typewriter {
+  color: white;
+  margin: 0;
+  opacity: 1;
+}
+
+.typewriter-line {
+  overflow: hidden;
+  border-right: 0.2em solid white;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.move-up {
+  animation: moveUp 0.5s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* TEXT INTRO */
+.aeishah {
+  background: url(images/bg-intro.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+}
+
+/* BG ANIMATION */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.bg-anim {
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+/* NAVBAR */
+nav.fill ul li a {
+  position: relative;
+}
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* PROFILE */
+/* header,
+#profile,
+#skills,
+#projects,
+#achievements,
+#hobbies {
+  background-image: url(images/bg-intro.png);
+  background-attachment: fixed;
+} */
+
+/* SOCIALS / CONTACT */
+.insta h1,
+.linkedin h1,
+.tele h1,
+.youtube h1 {
+  transition: 0.5s;
+}
+.insta:hover h1,
+.linkedin:hover h1,
+.youtube:hover h1,
+.tele:hover h1 {
+  transform: scale(1.1);
+}
+
+/* CURSOR */
+body {
+  cursor: url("images/custom-cursor.png"), auto;
+}
+
+@keyframes fade-down {
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a:hover {
+  cursor: url("images/custom-cursor.png"), auto;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #303030;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 1000ms, height 1000ms;
+}
+
+.cursor.large {
+  height: 70px;
+  width: 70px;
+}
+
+/* ANIMATIONS */
+/* .slide-tr {
+  -webkit-animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(100px);
+    transform: translateY(-100px) translateX(100px);
+  }
+}
+@keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(100px);
+    transform: translateY(-100px) translateX(100px);
+  }
+} */
+
+/* ANIMATION PROFILE */
+
+/* SKILLS */
+.html,
+.tw,
+.py,
+.an-stu,
+.boot,
+.css {
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.html p,
+.tw p,
+.py p,
+.an-stu p,
+.boot p,
+.css p {
+  transition: 0.5s;
+}
+.html img,
+.tw img,
+.py img,
+.an-stu img,
+.boot img,
+.css img {
+  transition: 0.8s;
+}
+.html:hover,
+.tw:hover,
+.py:hover,
+.an-stu:hover,
+.boot:hover,
+.css:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.html:hover img,
+.tw:hover img,
+.py:hover img,
+.an-stu:hover img,
+.boot:hover img,
+.css:hover img {
+  width: 30%;
+  top: 0;
+  opacity: 0.3;
+}
+.html:hover p,
+.tw:hover p,
+.py:hover p,
+.an-stu:hover p,
+.boot:hover p,
+.css:hover p {
+  display: block;
+  text-align: justify;
+  position: absolute;
+  width: 90%;
+}
+
+/* PROJECTS */
+.wc img {
+  transition: 0.5s;
+}
+
+.wc:hover img {
+  transform: scale(1.1);
+}
+
+.wc {
+  overflow: hidden;
+  position: relative;
+}
+
+.container-project:hover .desc {
+  display: block;
+}
+
+.container-project:hover .title {
+  display: none;
+}
+
+.container-project:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* ACHIEVEMENTS */
+.box .desc {
+  transition: 0.5s;
+}
+.box:hover .desc {
+  display: flex;
+  transition: 0.5s;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+.box img {
+  transition: 0.5s;
+}
+.box {
+  transition: 0.5s;
+}

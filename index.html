@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aeishah.</title>
+    <!-- TAILWIND -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plaster&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- ICON -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- ANIMATION -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- SLICK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- INTRO -->
+    <div id="splash">
+      <div class="typewriter plaster lg:text-8xl sm:text-5xl text-3xl">
+        <div class="typewriter-line" id="line1">a student</div>
+      </div>
+      <div class="typewriter plaster lg:text-8xl sm:text-5xl text-3xl">
+        <div class="typewriter-line" id="line2">web developer</div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav
+      class="fill sticky top-0 md:bg-transparent bg-white text-black z-50 tenor-sans-bold pt-3"
+    >
+      <div
+        class="container mx-auto px-4 md:flex items-center justify-center gap-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center justify-between md:w-auto w-full">
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>bars-3-bottom-left</title>
+                <g fill="none">
+                  <path
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Primary Navigation -->
+        <ul
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 navigation-menu pb-3 md:pb-0 navigation-menu"
+        >
+          <li>
+            <a href="#profile" class="py-2 px-5 block">Profile</a>
+          </li>
+          <li><a href="#skills" class="py-2 px-5 block">Skills</a></li>
+          <li><a href="#projects" class="py-2 px-5 block">Projects</a></li>
+          <li>
+            <a href="#achievements" class="py-2 px-5 block">Achievements</a>
+          </li>
+          <li><a href="#contact" class="py-2 px-5 block">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="h-[85vh] flex justify-center items-center bg-anim"
+    >
+      <h1
+        class="plaster lg:text-8xl sm:text-5xl text-3xl text-center animate-pulse"
+      >
+        a student<br />web developer
+      </h1>
+    </header>
+
+    <!-- CONTENTS -->
+    <main>
+      <!-- PROFILE -->
+      <section
+        id="profile"
+        class="md:h-screen bg-anim pt-[15vh] flex justify-around aos-init aos-animate max-md:flex-col"
+      >
+        <div class="pic md:w-1/2 flex justify-center items-center">
+          <img
+            class="w-[70%] object-contain top-0"
+            src="src/images/img-portfo.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="text md:w-1/2 flex flex-col justify-center items-center tenor-sans-reg text-2xl text-center gap-3"
+        >
+          Hi everyone! My name is
+          <span class="text-5xl hlgt">Siti Noraeishah.</span>
+          I'm a <span class="text-5xl">16 years old</span> student from
+          <span class="text-5xl">Selangor</span> who's currently studying in
+          <span class="text-5xl">Forward College.</span>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="md:h-screen sm:h-[150vh] h-fit bg-anim flex justify-center items-center pt-[3vh] max-sm:pt-[20vh]"
+      >
+        <div
+          class="container w-2/3 h-4/5 py-5 flex justify-between flex-wrap relative rounded-[50px]"
+        >
+          <div
+            class="html small bg-[#ffbda1] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/html.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              I’ve been learning HTML to build websites since 2021, but haven’t
+              used it for a while now. So I’m getting back at it.
+            </p>
+          </div>
+          <div
+            class="tw small bg-[#C3EEFA] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/tw.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              Started self-learning for the sake of these two projects. I can
+              say that from now on I am comfortable building websites using this
+              framework.
+            </p>
+          </div>
+          <div
+            class="py small bg-[#FFE79E] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/py.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              After learning it in our high school’s syllabus, I took the
+              Certified Entry-Level Python Programmer (PCEP) test last year and
+              successfully passed.
+            </p>
+          </div>
+          <div
+            class="an-stu small bg-[#CEEDAD] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/an-stu.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              Self-learned last year to finish my school project which requires
+              us to build an android mobile application.
+            </p>
+          </div>
+          <div
+            class="boot small bg-[#DFCEFA] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/boot.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              Just started learning last month. Overall I know how to use it,
+              but haven’t fully gone through it yet.
+            </p>
+          </div>
+          <div
+            class="css small bg-[#B4DADB] md:w-1/3 sm:w-1/2 w-full h-[50%] flex justify-center items-center"
+          >
+            <img class="sm:w-2/3 w-1/3" src="src/images/css.png" alt="" />
+            <p class="text hidden tenor-sans-reg p-5">
+              Same with HTML, I’ve also been learning CSS since 2021 in creating
+              websites.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section
+        id="projects"
+        class="lg:h-[270vh] sm:pt-[50vh] max-md:pt-[50vh] pt-[0vh] w-full flex flex-col justify-center items-center gap-5 py-10 bg-anim"
+      >
+        <div
+          class="container-project bg-white w-5/6 bg-white-500 shadow-md shadow-black rounded-3xl flex p-2 max-lg:flex-col max-lg:items-center max max-lg:py-5 max-lg:gap-10"
+        >
+          <div
+            class="text lg:w-1/3 w-4/5 lg:h-56 flex flex-col items-center justify-center plaster text-4xl text-center"
+          >
+            <div class="title">WEBSITE CLONING</div>
+            <div class="desc tenor-sans-reg text-lg hidden p-3 text-white">
+              These are the exercises and assignments of cloning websites or
+              some parts of them.
+            </div>
+          </div>
+          <div
+            class="pic w-2/3 h-full rounded-3xl flex items-center max-lg:justify-start gap-10 max-md:flex-col"
+          >
+            <div
+              class="wc md:w-[48%] rounded-3xl overflow-hidden shadow-sm shadow-black"
+            >
+              <a href="https://pos-laju-aeishah.netlify.app/">
+                <img src="src/images/poslaju.png" alt="" class="poslaju" />
+              </a>
+            </div>
+            <div
+              class="wc md:w-[48%] rounded-3xl overflow-hidden shadow-sm shadow-black"
+            >
+              <a href="https://day9-exercise-aeishah.netlify.app/">
+                <img src="src/images/ninestars.png" alt="" class="ninestars" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-project bg-white w-5/6 bg-white-500 shadow-md shadow-black rounded-3xl flex p-2 items-center max-lg:flex-col max-lg:items-center max max-lg:py-5 max-lg:gap-10"
+        >
+          <div class="pic lg:w-1/2 w-3/4 h-full rounded-3xl flex items-center">
+            <div
+              class="pic w-full h-[95%] rounded-3xl flex items-center gap-10"
+            >
+              <div
+                class="wc w-full rounded-3xl overflow-hidden shadow-sm shadow-black"
+              >
+                <a
+                  href="https://www.canva.com/design/DAFxik8ZjZc/rKnzBpsl4LcOElCxF-vA4w/edit?utm_content=DAFxik8ZjZc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                  class="w-full"
+                >
+                  <img
+                    src="src/images/visorpro.png"
+                    alt=""
+                    class="poslaju w-full object-cover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text lg:w-1/2 w-5/6 lg:h-56 flex flex-col items-center justify-center plaster text-4xl text-center"
+          >
+            <div class="title">VISORPRO</div>
+            <div class="desc tenor-sans-reg text-lg hidden p-3 text-white">
+              This is a project from my previous year with 3 of my group members
+              in which we created a device that can detect when a student is
+              leaving school premises without consent at night (fly), then
+              notifying the wardens through telegram bot by sending them the
+              footage recorded and notifications alert.
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-project bg-white w-5/6 bg-white-500 shadow-md shadow-black rounded-3xl flex p-2 items-center max-lg:flex-col max-lg:items-center max max-lg:py-5 max-lg:gap-10"
+        >
+          <div
+            class="text lg:w-1/2 w-5/6 lg:h-56 flex flex-col items-center justify-center plaster text-4xl text-center"
+          >
+            <div class="title">FROSTGUARD</div>
+            <div class="desc tenor-sans-reg text-lg hidden p-3 text-white">
+              This is a project where my teammates and I made a prototype device
+              using raspberry pi that can sense the temperature and humidity
+              inside a refrigerator, and then notifying users through a mobile
+              application if the temperature or the humidity is abnormal to
+              ensure the products inside will not be damaged.
+            </div>
+          </div>
+          <div
+            class="pic lg:w-1/2 w-3/4 bg-red-600 h-full rounded-3xl flex justify-end items-center"
+          >
+            <div
+              class="pic w-full h-full rounded-3xl flex items-center justify-end"
+            >
+              <div
+                class="pic w-full h-[95%] rounded-3xl flex items-center gap-10"
+              >
+                <div
+                  class="wc w-full rounded-3xl overflow-hidden shadow-sm shadow-black"
+                >
+                  <a
+                    href="https://www.canva.com/design/DAFjjrvrO9Q/_Mjg5ubReJbPYf9hdPjuiA/edit?utm_content=DAFjjrvrO9Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                    class="w-full"
+                  >
+                    <img
+                      src="src/images/frostguard.png"
+                      alt=""
+                      class="poslaju w-full object-cover"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-project bg-white w-5/6 bg-white-500 shadow-md shadow-black rounded-3xl flex p-2 items-center max-lg:flex-col max-lg:items-center max max-lg:py-5 max-lg:gap-10"
+        >
+          <div class="pic lg:w-1/2 w-3/4 bg-red-600 h-full rounded-3xl">
+            <div class="pic w-full h-full rounded-3xl flex items-center">
+              <div
+                class="pic w-full h-[95%] rounded-3xl flex items-center gap-10"
+              >
+                <div
+                  class="wc w-full rounded-3xl overflow-hidden shadow-sm shadow-black"
+                >
+                  <a href="https://youtu.be/pQVZMdEIGFc" class="w-full">
+                    <img
+                      src="src/images/mitsukool.png"
+                      alt=""
+                      class="poslaju w-full object-cover"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text lg:w-1/2 w-5/6 lg:h-56 flex flex-col items-center justify-center plaster text-4xl text-center"
+          >
+            <div class="title">MITSUKOOL</div>
+            <div class="desc tenor-sans-reg text-lg hidden p-3 text-white">
+              This is a project where my teammates and I made a prototype device
+              using raspberry pi that can sense the temperature and humidity
+              inside a refrigerator, and then notifying users through a mobile
+              application if the temperature or the humidity is abnormal to
+              ensure the products inside will not be damaged.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section
+        id="achievements"
+        class="lg:h-[110vh] bg-anim w-full flex justify-center items-center max-lg:py-20"
+      >
+        <div
+          class="container w-[90%] flex justify-center items-center gap-10 max-lg:flex-col max-lg:flex-wrap"
+        >
+          <div
+            class="box h-fit bg-black hover:bg-white lg:w-1/4 w-5/6 rounded-3xl p-3 relative flex justify-center items-center"
+          >
+            <div class="rounded-3xl overflow-hidden">
+              <img
+                class="w-full object-cover lg:h-52"
+                src="src/images/pcep.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="desc text-justify tenor-sans-bold p-8 hidden absolute bg-white h-full rounded-3xl justify-center items-center"
+            >
+              As part of my school’s syllabus, I took this exam last December
+              and successfully passed it.
+            </div>
+          </div>
+          <div
+            class="box h-fit bg-black hover:bg-white lg:w-1/4 w-5/6 rounded-3xl p-3 relative flex justify-center items-center"
+          >
+            <div class="rounded-3xl overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="src/images/siic.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="desc text-justify tenor-sans-bold p-8 hidden absolute bg-white h-full rounded-3xl justify-center items-center"
+            >
+              Last year we participated in this competition by combining each of
+              our teammates’ IoT projects’ main functions and making it into one
+              system.
+            </div>
+          </div>
+          <div
+            class="box h-fit bg-black hover:bg-white lg:w-1/4 w-5/6 rounded-3xl p-3 relative flex justify-center items-center"
+          >
+            <div class="rounded-3xl overflow-hidden">
+              <img
+                class="w-full object-cover lg:h-52"
+                src="src/images/award.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="desc text-justify tenor-sans-bold p-8 hidden absolute bg-white h-full rounded-3xl justify-center items-center"
+            >
+              These are some of my academic achievements I’ve achieved
+              throughout my student years.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="h-screen">
+        <a
+          href="https://www.instagram.com/aeishahrb/"
+          target="_blank"
+          class="insta"
+          ><div
+            class="h-1/3 w-full flex justify-center items-center border-b-2 border-b-black"
+          >
+            <h1 class="sm:text-7xl text-4xl text-black plaster text-center">
+              INSTAGRAM
+            </h1>
+          </div></a
+        >
+        <a
+          href="https://www.linkedin.com/in/siti-noraeishah-5b6b222ab/"
+          target="_blank"
+          class="linkedin"
+          ><div
+            class="linkedin h-1/3 w-full flex justify-center items-center border-y-2 border-y-black"
+          >
+            <h1 class="sm:text-7xl text-4xl text-black plaster text-center">
+              LINKEDIN
+            </h1>
+          </div></a
+        >
+        <a href="https://t.me/aeishahrb" target="_blank" class="tele"
+          ><div
+            class="telegram h-1/3 w-full flex justify-center items-center border-y-2 border-y-black"
+          >
+            <h1 class="sm:text-7xl text-4xl text-black plaster text-center">
+              TELEGRAM
+            </h1>
+          </div></a
+        >
+        <a
+          href="https://www.youtube.com/channel/UCSRfReUZCNFYd7o19nkMwAw"
+          target="_blank"
+          class="youtube"
+          ><div
+            class="youtube h-1/3 w-full flex justify-center items-center border-y-2 border-y-black"
+          >
+            <h1 class="sm:text-7xl text-4xl text-black plaster text-center">
+              YOUTUBE
+            </h1>
+          </div></a
+        >
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="w-full h-20 mt-[33.333333vh] bg-black flex justify-center items-center"
+    >
+      <h1 class="text-white tenor-sans-reg text-lg text-center">
+        copyright &copy; 2024 aeishah
+      </h1>
+    </footer>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="src/app.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".achiv-car").slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+        $(".one-time").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+
+          autoplay: true,
+          autoplaySpeed: 1500,
+        });
+      });
+    </script>
+  </body>
+</html>
